@@ -11,8 +11,8 @@ const GAME_SETTING = {
         "01", "02", "03", "04", "05", "06",
         "07", "08", "09", "10", "11", "12"
     ],
-    cardBackPath: "/assets/images/cards/card-back.png",
-    cardFrontPath: "/assets/images/cards/",
+    cardBackPath: "../assets/images/cards/card-back.png",
+    cardFrontPath: "../assets/images/cards/",
     fadeMaxDuration: 2000,
     flipInterval: 1000,
     peakInterval: 3000
