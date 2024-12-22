@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/nes.css@latest/css/nes.min.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/game.css">
+</head>
+<body>
+
+    <!-- Game Title -->
+    <section class="section">
+        <div class="container">
+            <div class="is-size-2 is-size-3-mobile has-text-centered">
+                The <span class="txt-accent">Memory</span> Game
+            </div>
+        </div>
+    </section>
+
+    <!-- Game -->
+    <section class="section">
+
+        <!-- Toolbar -->
+        <div class="container mb-5">
+            <div class="nes-container is-rounded is-dark py-0 pt-3">
+                <div class="columns is-vcentered is-mobile">
+
+                    <div class="column is-size-5">
+                        Score <span id="score" class="txt-accent">0</span>
+                    </div>
+
+                    <div class="column is-narrow ">
+                        <a type="button" class="nes-btn is-primary" onclick="restartHandler()">Restart</a>
+                    </div>
+
+                    <div class="column is-narrow ">
+                        <a type="button" class="nes-btn is-error" href="index.html">Exit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Layout -->
+        <div class="container">
+            <div id="card-grid" class="grid has-text-centered is-gap-4"></div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

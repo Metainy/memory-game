@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/nes.css@latest/css/nes.min.css" />
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+
+    <!-- Game Title -->
+    <section class="section ">
+        <div class="container">
+            <div class="is-size-2 is-size-3-mobile has-text-centered">
+                The <span class="is-block txt-accent">Memory</span> Game
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="section">
+        <div class="container">
+            <section class="message -left is-flex is-justify-content-center">
+                <i class="nes-bcrikko mr-4 is-inline-block"></i>
+
+                <div class="nes-balloon from-left ">
+                    <p>A fun matching game of visual recall.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Game Controls -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-centered">
+                <div class="column is-narrow">Difficulty</div>
+
+                <div class="column is-narrow">
+
+                    <div class="nes-container is-rounded is-dark py-2 pt-4" role="group" onchange="difficultyHandler()">
+                        <label>
+                            <input type="radio" class="nes-radio" name="difficulty" value="0" />
+                            <span class="nes-text is-success">Easy</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" class="nes-radio" name="difficulty" value="1" />
+                            <span class="nes-text is-warning">Medium</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" class="nes-radio" name="difficulty" value="2" />
+                            <span class="nes-text is-error">Hard</span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="columns is-centered">
+                <div class="column is-narrow">
+                    <a type="button" class="nes-btn is-primary px-6 py-3" href="game.html">Play</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scores -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered is-size-4">
+                <div class="column is-narrow is-flex is-align-items-center">
+                    Highest Score
+                    <span id="high-score" class="txt-accent ml-4">0</span>
+                </div>
+            </div>
+
+            <div class="columns is-centered">
+                <a type="button" class="nes-btn is-error" onclick="resetScoreHandler()">Reset Score</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/landing.js"></script>
+</body>
+</html>
